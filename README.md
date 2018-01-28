@@ -10,13 +10,13 @@
 
 <p>Abra visual studio y selecciona la opción crear nueva solución => Multiplataforma => Aplicación de Forms en blanco.</p>
 
-<img src="/Img/img1.PNG"/> 
+<img src="/Img/img1.png"/> 
 
-<img src="/Img/img2.PNG"/>
+<img src="/Img/img2.png"/>
 
 <h3>Paso 2 - Configurar MvvmCross</h3>
 
-<img src="/Img/img3.PNG"/>
+<img src="/Img/img3.png"/>
 
 <ol>
  <li>Agregue <strong>.Core </strong>al nombre del proyecto PCL.</li>
@@ -35,7 +35,7 @@
 
  <p>Seguiendo los pasos anteriores, MvvmCross ya estaría configurado. Al compilar se debe ver algo similar a la siguiente captura</p>
 
-<img src="/Img/img3_1.PNG"/>
+<img src="/Img/img3_1.png"/>
 
 
 <h3>Paso 3 - Archivo de arranque de la aplicación. CoreApp</h3>
