@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d:MvxContentPage x:TypeArguments="viewModels:MainViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BaseForms.Core.Pages"
+    x:Class="BaseForms.Core.Pages.MainPage"
+    xmlns:templates="clr-namespace:BaseForms.Views.Template;assembly=BaseForms"
+    xmlns:viewModels="clr-namespace:BaseForms.Core.ViewModels;assembly=BaseForms.Core"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms">
+	<ContentPage.Content>
+       <ListView SeparatorVisibility="None" 
+         ItemsSource="{Binding Movies}" 
+            SelectedItem="{Binding SelectedMovie, Mode=TwoWay}">
+
+            <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <templates:ItemListImageTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            
+        </ListView>
+	</ContentPage.Content>
+</d:MvxContentPage>

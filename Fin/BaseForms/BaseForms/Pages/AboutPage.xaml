@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d:MvxContentPage x:TypeArguments="viewModels:AboutViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BaseForms.Core.Pages"
+    x:Class="BaseForms.Core.Pages.AboutPage"
+    xmlns:viewModels="clr-namespace:BaseForms.Core.ViewModels;assembly=BaseForms.Core"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+     Title="{Binding Title}">
+      <ContentPage.ToolbarItems>
+         <ToolbarItem Name="Cerrar" Command="{Binding CloseCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="StartAndExpand">
+            
+            <Image Aspect="AspectFill" Source="{Binding SelectedMovie.ImgBig}"></Image>           
+            <Label Text="{Binding SelectedMovie.Overview}"></Label>
+            
+        </StackLayout>
+    </ContentPage.Content> 
+</d:MvxContentPage>
+
