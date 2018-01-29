@@ -7,8 +7,9 @@
     xmlns:templates="clr-namespace:BaseForms.Views.Template;assembly=BaseForms"
     xmlns:viewModels="clr-namespace:BaseForms.Core.ViewModels;assembly=BaseForms.Core"
     xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms">
-	<ContentPage.Content>
-       <ListView SeparatorVisibility="None" 
+	<Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+<ListView SeparatorVisibility="None" 
          ItemsSource="{Binding Movies}" 
             SelectedItem="{Binding SelectedMovie, Mode=TwoWay}">
 
@@ -21,5 +22,12 @@
                 </ListView.ItemTemplate>
             
         </ListView>
-	</ContentPage.Content>
+
+        <ActivityIndicator VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                           IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"  />
+        </Grid>
+       
+
+
 </d:MvxContentPage>
