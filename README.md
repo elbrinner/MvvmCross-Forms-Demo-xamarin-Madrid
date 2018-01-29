@@ -595,6 +595,7 @@ namespace BaseForms.Core.ViewModels
 <li><strong>SelectedMovie</strong> se usa para guardar el elemento seleccionado.</li>
 </ul>
 
+Código aqui <a href="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Pages/MainPage.xaml">Vista MainView</a>
 <pre>
 <code>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -617,8 +618,8 @@ namespace BaseForms.Core.ViewModels
                             <templates:ItemListImageTemplate />
                         </ViewCell>
                     </DataTemplate>
-            
                 </ListView.ItemTemplate>
+            
         </ListView>
 	</ContentPage.Content>
 </d:MvxContentPage>
@@ -660,6 +661,7 @@ Código aqui <a href="https://raw.githubusercontent.com/elbrinner/MvvmCross-Form
 
 <h5>Template 2 sin imagen</h5>
 
+Código aqui <a href="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListTextTemplate.xaml">Template 2</a>
 <pre>
 <code>
 	
