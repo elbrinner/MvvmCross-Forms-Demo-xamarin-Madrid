@@ -35,12 +35,12 @@
 
  <p>Seguiendo los pasos anteriores, MvvmCross ya estaría configurado. Al compilar se debe ver algo similar a la siguiente captura</p>
 
-<img src="/Img/img3_1.png"/>
+<img src="/Img/3_1.png"/>
 
 
 <h3>Paso 3 - Archivo de arranque de la aplicación. CoreApp</h3>
 
-
+<pre>
 <code>
  public override void Initialize()
         {
@@ -57,6 +57,7 @@
         }
 
 </code>
+</pre>
 
 No es necesario aplicar ningún cambio. Si tenemos un servicio que el nombre no termine por Service, tenemos que registrar de la siguiente forma:
 
@@ -69,6 +70,7 @@ Mvx.LazyConstructAndRegisterSingleton<INombre, Nombre>();
 <p>Creamos una carpeta con el nombre de Constants y dentro de ella, un CLASS estatica ConfigConstants.cs</p>
 
 <code>
+<pre>
 using System;
 namespace BaseForms.Constants
 {
@@ -83,10 +85,37 @@ namespace BaseForms.Constants
         public const string imgBig = "http://image.tmdb.org/t/p/w780";
     }
 }
+</pre>
 </code>
 
 
-.. en proceso
+<h3>Paso 5 - Crear las interfaces de los servicios</h3>
+
+
+<p>En el proyecto de la PCL, vamos a crear una carpeta Interfaces y dentro de la misma 2 carpetas más Iconnectors y IWebServices</p>
+
+<p>Dentro de la carpeta Iconnectors, crearemos la interfaz para acceder a HttpClient</p>
+
+<h4>IWebClientService.cs</h4>
+
+<pre>
+<code>
+using System;
+using System.Net.Http;
+
+namespace BaseForms.Interfaces.IConnectors
+{
+    public interface IWebClientService
+    {
+        HttpClient Client();   
+    }
+}
+
+</code>
+</pre>
+
+<p>* Es ejemplo es muy básico, haga la interfaz según tu necesidad</p>
+
 
 
 
