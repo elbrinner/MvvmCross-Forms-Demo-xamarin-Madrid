@@ -633,7 +633,7 @@ namespace BaseForms.Core.ViewModels
 
 <h5>Template 1 con imagen</h5>
 
-<iframe width="100%" height="350px" src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml" ></iframe>
+Código aqui <a href="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml">Template 1</a>
 <pre>
 <code>
 	
@@ -760,6 +760,7 @@ namespace BaseForms.Core.ViewModels
 
 <h3>Paso 14 - Crear la AboutView</h3>
 
+Código aqui <a href="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Pages/AboutPage.xaml">Vista AboutView</a>
 <pre>
 <code>
 
