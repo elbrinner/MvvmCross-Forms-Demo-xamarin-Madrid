@@ -634,24 +634,8 @@ namespace BaseForms.Core.ViewModels
 <h5>Template 1 con imagen</h5>
 <pre>
 <code>
-	
-	<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="BaseForms.Views.Template.ItemListImageTemplate">
-	<ContentView.Content>
-       
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="1">
-         <Image Source="{Binding ImgSmall}" HorizontalOptions="End"/>
-            <StackLayout Orientation="Vertical">
-                <Label Text = "{Binding Title}" FontSize="18"/>
-                <Label Text = "{Binding OriginalTitle}" FontSize="10"/>  
-             </StackLayout>
-         </StackLayout>
 
-            
-	</ContentView.Content>
-</ContentView>
+<iframe src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml"></iframe>
 
 </code>
 </pre>
@@ -676,7 +660,6 @@ namespace BaseForms.Core.ViewModels
          </StackLayout>
 	</ContentView.Content>
 </ContentView>
-
 
 </code>
 </pre>
