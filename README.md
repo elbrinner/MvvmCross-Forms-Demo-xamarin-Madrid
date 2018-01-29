@@ -633,7 +633,7 @@ namespace BaseForms.Core.ViewModels
 
 <h5>Template 1 con imagen</h5>
 
-<iframe width="100%" height="350px" src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml"></iframe>
+<iframe width="100%" height="350px" src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml" ></iframe>
 <pre>
 <code>
 	
