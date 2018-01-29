@@ -632,10 +632,28 @@ namespace BaseForms.Core.ViewModels
 <p>El próximo paso es crear nuestros templates distinto, para esto debemos crear una página <strong>contentView</strong></p>
 
 <h5>Template 1 con imagen</h5>
+
+<iframe width="100%" height="350px" src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml"></iframe>
 <pre>
 <code>
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BaseForms.Views.Template.ItemListImageTemplate">
+	<ContentView.Content>
+       
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="1">
+         <Image Source="{Binding ImgSmall}" HorizontalOptions="End"/>
+            <StackLayout Orientation="Vertical">
+                <Label Text = "{Binding Title}" FontSize="18"/>
+                <Label Text = "{Binding OriginalTitle}" FontSize="10"/>  
+             </StackLayout>
+         </StackLayout>
 
-<iframe src="https://raw.githubusercontent.com/elbrinner/MvvmCross-Forms-Demo-xamarin-Madrid/master/Fin/BaseForms/BaseForms/Views/Template/ItemListImageTemplate.xaml"></iframe>
+            
+	</ContentView.Content>
+</ContentView>
 
 </code>
 </pre>
